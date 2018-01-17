@@ -16,6 +16,6 @@ namespace PDBWebApp.Data
         public DbSet<Studios> Studioses { get; set; }
         public DbSet<Workouts> Workouts { get; set; }
         public DbSet<Schedule> Schedules { get; set; }
-
+        public DbSet<FillInfo> FillInfo { get; set; }
     }
 }

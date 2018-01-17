@@ -33,6 +33,7 @@ namespace PDBWebApp
             services.AddScoped<IStudioData, SQLStudioData>();
             services.AddScoped<IWorkoutsData, SQLWorkoutData>();
             services.AddScoped<IScheduleData, SQLScheduleData>();
+            services.AddScoped<IFillInfoData, SQLFillInfoData>();
 
             services.AddMvc();
         }
@@ -56,12 +57,8 @@ namespace PDBWebApp
 
         private void ConfigureRoutes(IRouteBuilder routeBuilder)
         {
-            routeBuilder.MapRoute("Default", "{controller=Studio}/{action=Studio}/{id2?}");
-            routeBuilder.MapRoute("Activities_Route", "{controller=Home}/{id1?}/{action=Index}/{id2?}");
-            
-            
-            // routeBuilder.MapRoute("Details", "{controller=Home}/{action?}/{id?}");
-
+            routeBuilder.MapRoute("Default", "{controller=Studio}/{action=Studio}/{id1?}");
+            routeBuilder.MapRoute("Activities_Route", "{controller=Home}/{id1?}/{action=Index}/{id2?}"); 
         }
     }
 

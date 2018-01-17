@@ -16,6 +16,5 @@
   
   <ItemGroup>
     <Folder Include="Migrations\" />
-    <Folder Include="Views\FillForm\" />
   </ItemGroup>
 </Project>

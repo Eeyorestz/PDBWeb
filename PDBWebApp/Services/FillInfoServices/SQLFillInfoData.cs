@@ -9,9 +9,14 @@ using SQLitePCL;
 namespace PDBWebApp.Services
 {
     
-    public class SQLFillInfoeData : IFillInfoData
+    public class SQLFillInfoData : IFillInfoData
     {
         private PDBWebAppDbContext _context;
+
+        public SQLFillInfoData(PDBWebAppDbContext context)
+        {
+            _context = context;
+        }
         public IEnumerable<FillInfo> GetAll(int? studioId, int? workoutID)
         {
             throw new NotImplementedException();

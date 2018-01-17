@@ -15,7 +15,6 @@ namespace PDBWebApp.Services
         public SQLScheduleData(PDBWebAppDbContext context)
         {
             _context = context;
-            
         }
         public IEnumerable<Schedule> GetAll(int? studioID, int? workoutID)
         {

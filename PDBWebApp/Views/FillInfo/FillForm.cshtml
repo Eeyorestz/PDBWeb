@@ -1,0 +1,31 @@
+﻿@using PDBWebApp.Models
+@model Studios
+
+
+<form method="post">
+    <div>
+        <label  asp-for="Name"></label>
+        <input asp-for="Name"/>
+    </div>
+    <div >
+        <table class="alt">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>N: на карта</th>
+                    <th>вид карта/стока</th>
+                    <th>име и фамилия:</th>
+                    <th>хонорар</th>
+                    <th>карта/ пари</th>
+                    <th>касов бон</th>
+                    <th>начин на плащане</th>
+                    <th>Общ хонорар</th>
+                </tr>
+            </thead>
+        @*<select asp-for="Workout" asp-items="@Html.GetEnumSelectList<WorkoutType>()"> </select>*@
+            </table>
+</div>
+       
+   
+    <input type="submit" name="save" value="Save">
+</form>

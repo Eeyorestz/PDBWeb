@@ -16,14 +16,12 @@ namespace PDBWebApp.Controllers
         public HomeController(IStudioData studioData, IWorkoutsData workoutsData, IScheduleData scheduleData)
         {
             _studioData = studioData;
-           
         }
 
         public IActionResult Index()
         {
             var model = new StudiosViewModel();
             model.Studios = _studioData.GetAll();
-
             return View(model);
         }
 
@@ -32,7 +30,7 @@ namespace PDBWebApp.Controllers
         [HttpGet]
         public IActionResult FillInfo()
         {
-            return View();
+            return null;
         }
         //[HttpPost]
         //[ValidateAntiForgeryToken]

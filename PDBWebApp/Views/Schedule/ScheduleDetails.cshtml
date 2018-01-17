@@ -5,7 +5,7 @@
     @foreach (var schedule in Model.Schedules)
     {
         <tr>
-            <td><a asp-action="ScheduleDetails">@schedule.ScheduleValue</a></td>
+            <td><a asp-controller="FillInfo" asp-action="FillForm" asp-route-id3="@schedule.Id">@schedule.ScheduleValue</a></td>
         </tr>
     }
 
