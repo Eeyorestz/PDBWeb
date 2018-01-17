@@ -1,0 +1,14 @@
+﻿
+@model PDBWebApp.ViewModels.SchedulesViewModel
+
+<table>
+    @foreach (var schedule in Model.Schedules)
+    {
+        <tr>
+            <td><a asp-action="ScheduleDetails">@schedule.ScheduleValue</a></td>
+        </tr>
+    }
+
+</table>
+
+<a asp-action="Index" asp-controller="Home">Back to home</a>

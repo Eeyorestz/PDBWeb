@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace PDBWebApp.Models
 {
-    public class Studios
+    public class Workouts
     {
         public int Id { get; set; }
-        [Display(Name = "Workout name") ]
-       
+        [Display(Name = "Workout name")]
         public string Name { get; set; }
-       
     }
 }

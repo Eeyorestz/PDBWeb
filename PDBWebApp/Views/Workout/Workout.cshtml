@@ -1,0 +1,13 @@
+﻿
+@model PDBWebApp.ViewModels.WorkoutViewModel
+
+<table>
+    @foreach (var workout in Model.Workouts)
+    {
+        <tr>
+            <td><a  asp-controller="Schedule" asp-route-id2="@workout.Id" asp-action="ScheduleDetails" >@workout.Name</a></td>
+        </tr>
+    }
+</table>
+
+<a asp-action="Index" asp-controller="Home">Back to home</a>
